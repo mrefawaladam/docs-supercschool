@@ -1,0 +1,25 @@
+{
+  "name": "superapp-docs",
+  "version": "1.0.0",
+  "description": "Dokumentasi Resmi Schools Super Workspace",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs --port 5173 --strictPort",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs --port 5173 --strictPort"
+  },
+  "keywords": [
+    "vitepress",
+    "documentation",
+    "schools-superapp"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "debug": "^4.4.3",
+    "mermaid": "^11.17.2",
+    "vitepress": "^1.6.4",
+    "vitepress-mermaid-renderer": "^1.2.2",
+    "vitepress-plugin-mermaid": "^2.0.17"
+  }
+}
