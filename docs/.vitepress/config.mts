@@ -65,7 +65,8 @@ export default withMermaid({
           { text: 'Mata Pelajaran', link: '/panduan-admin/mata-pelajaran' },
           { text: 'Tahun Ajaran', link: '/panduan-admin/tahun-ajaran' },
           { text: 'Hari Libur', link: '/panduan-admin/hari-libur' },
-          { text: 'Jadwal Mengajar', link: '/panduan-admin/jadwal-mengajar' }
+          { text: 'Jadwal Mengajar', link: '/panduan-admin/jadwal-mengajar' },
+          { text: 'Persuratan & Surat Keluar', link: '/panduan-admin/persuratan' }
         ]
       },
       {
@@ -109,7 +110,8 @@ export default withMermaid({
           { text: '1. Panduan Login Pertama Kali', link: '/panduan-siswa/login-portal' },
           { text: '2. Cara Cek & Bayar Tagihan SPP', link: '/panduan-siswa/cek-bayar-spp' },
           { text: '3. Tata Cara Mengikuti Ujian CBT', link: '/panduan-siswa/mengikuti-ujian-cbt' },
-          { text: '4. Saldo Kartu Pelajar & Riwayat Jajan', link: '/panduan-siswa/dompet-kartu-siswa' }
+          { text: '4. Saldo Kartu Pelajar & Riwayat Jajan', link: '/panduan-siswa/dompet-kartu-siswa' },
+          { text: '5. Pengajuan Surat Mandiri Siswa', link: '/panduan-admin/persuratan#portal-pengajuan-surat-mandiri-siswa' }
         ]
       },
       {
