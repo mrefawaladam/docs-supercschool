@@ -75,7 +75,8 @@ export default withMermaid({
         items: [
           { text: 'Ringkasan Manajemen Sistem', link: '/panduan-sistem/' },
           { text: '1. Manajemen User (Daftar Pengguna)', link: '/panduan-sistem/manage-users' },
-          { text: '2. Pengaturan Umum Sistem (Settings)', link: '/panduan-sistem/settings' }
+          { text: '2. Pengaturan Umum Sistem (Settings)', link: '/panduan-sistem/settings' },
+          { text: '3. Kontak Bantuan & Support WhatsApp', link: '/panduan-sistem/settings-whatsapp' }
         ]
       },
       {
