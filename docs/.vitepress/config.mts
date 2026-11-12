@@ -120,11 +120,12 @@ export default withMermaid({
         collapsed: false,
         items: [
           { text: 'Ringkasan Ekosistem Kantin', link: '/panduan-kantin/' },
-          { text: '1. Kasir POS & Scan Kartu RFID', link: '/panduan-kantin/pos-kasir' },
+          { text: '1. Kasir POS, Barcode Scanner & Keranjang', link: '/panduan-kantin/pos-kasir' },
           { text: '2. Manajemen Menu & Cetak Barcode', link: '/panduan-kantin/daftar-menu' },
-          { text: '3. Batas Belanja Harian Siswa', link: '/panduan-kantin/limit-harian' },
-          { text: '4. Tutup Buku & Settlement Supplier', link: '/panduan-kantin/tutup-buku' },
-          { text: '5. Layanan Top-Up Saldo Siswa', link: '/panduan-kantin/topup-saldo' }
+          { text: '3. Titip Barang Konsinyasi & Stok Harian', link: '/panduan-kantin/konsinyasi' },
+          { text: '4. Batas Belanja Harian Siswa', link: '/panduan-kantin/limit-harian' },
+          { text: '5. Tutup Buku & Settlement Supplier', link: '/panduan-kantin/tutup-buku' },
+          { text: '6. Layanan Top-Up Saldo Siswa', link: '/panduan-kantin/topup-saldo' }
         ]
       },
       {

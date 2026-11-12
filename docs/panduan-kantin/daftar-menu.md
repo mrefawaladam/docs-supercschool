@@ -52,16 +52,20 @@ flowchart LR
 
 ---
 
-## 3. Fitur Cetak Lembar Barcode (*Print Barcode Sheet*)
+## 3. Fitur Cetak Lembar Barcode Bergambar (*Print Barcode Sheet*)
 
 Fitur ini sangat bermanfaat bagi stan kantin yang ingin mempercepat proses antrean menggunakan alat barcode scanner USB:
 
+![Lembar Cetak Barcode Bergambar](/screenshots/02_print_barcode_sheet_with_photos.png)
+
 1. Di atas tabel menu, klik tombol **`Cetak Barcode`**.
 2. Modal pratinjau lembar barcode akan terbuka menampilkan seluruh barcode produk yang tersusun rapi per baris dan kolom.
-3. Anda dapat memilih opsi pencetakan:
-   - **Lembar Kertas Stiker**: Dicetak pada kertas stiker untuk ditempel langsung pada bungkus makanan atau wadah etalase.
-   - **Lembar Meja Kasir (Laminating)**: Dicetak pada selembar kertas HVS/karton untuk diletakkan di samping meja kasir. Kasir cukup mengarahkan scanner ke kode barcode di lembaran tersebut tanpa perlu mengetik nama menu.
-4. Klik tombol **Cetak Sekarang (Print)**.
+3. Anda dapat mengatur opsi pencetakan:
+   - **Tampilkan Gambar Menu**: Centang opsi ini agar thumbnail foto makanan muncul di atas barcode, memudahkan kasir mengenali bentuk fisik kemasan makanan tanpa tertukar.
+   - **Filter per Supplier**: Pilih nama supplier tertentu untuk mencetak lembar barcode khusus produk titipan mitra tersebut.
+   - **Pilihan Kolom Cetak**: Pilih layout 2, 3, atau 4 kolom sesuai ukuran kertas cetak.
+   - **Tampilkan Harga**: Menampilkan atau menyembunyikan harga jual pada kartu barcode.
+4. Klik tombol **Cetak Barcode (A4)** untuk langsung mencetak atau menyimpannya sebagai file PDF siap cetak.
 
 ---
 

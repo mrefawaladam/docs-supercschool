@@ -1,16 +1,30 @@
-# Transaksi Kasir POS & Scan Kartu RFID
+# Transaksi Kasir POS, Barcode Scanner & Keranjang Belanja
 
 Aplikasi kasir **Point of Sale (POS) Kantin** dirancang khusus untuk melayani transaksi belanja siswa dengan kecepatan tinggi di jam istirahat sekolah yang padat.
 
-Kasir dapat dioperasikan menggunakan komputer, laptop, tablet, atau mesin POS layar sentuh dengan scanner kartu RFID terhubung via USB.
+Kasir dapat dioperasikan menggunakan komputer, laptop, tablet, atau mesin POS layar sentuh dengan scanner kartu RFID dan barcode scanner USB/Bluetooth.
 
 ---
 
 ## Tampilan Antarmuka Kasir POS
 
-Berikut adalah tampilan antarmuka resmi kasir POS kantin sekolah:
+Berikut adalah tampilan antarmuka resmi kasir POS kantin sekolah dengan indikator barcode scanner dan keranjang belanja itemized:
 
-![Sistem POS Kantin](/screenshots/kantin-pos.png)
+![Sistem POS Kantin](/screenshots/01_canteen_pos_cart.png)
+
+---
+
+## Fitur Unggulan POS Kasir Terbaru
+
+1. **Integrasi Hardware Barcode Scanner (Universal Keyboard Wedge)**:
+   - Kasir dapat langsung men-scan barcode pada kemasan makanan atau lembar katalog meja kasir menggunakan barcode scanner fisik (USB/Bluetooth).
+   - Sistem mendeteksi pemindaian berkecepatan tinggi (`< 70ms`) secara instan dari mana saja tanpa perlu mengarahkan kursor mouse ke kolom input teks.
+   - Dilengkapi **Audio Feedback**: Bunyi bip bernada tinggi saat scan sukses (+1 item ke keranjang) dan nada peringatan bila stok habis atau barcode tidak terdaftar.
+2. **Rincian Item Belanja Transparan (Itemized Cart Checkout)**:
+   - Kasir dan pembeli dapat melihat rincian setiap item menu yang dibeli (nama makanan, harga satuan, jumlah porsi, sisa stok maksimal, dan subtotal harga).
+   - Struk transaksi yang dicetak mencantumkan daftar item secara rinci untuk akurasi pembukuan dan stok riil.
+3. **Pembayaran Fleksibel (Hybrid Payment)**:
+   - Mendukung pembayaran otomatis via **Dompet Digital Siswa (Kartu RFID)** maupun pembayaran **Tunai (Cash)** dengan kalkulasi kembalian.
 
 ---
 
@@ -18,16 +32,14 @@ Berikut adalah tampilan antarmuka resmi kasir POS kantin sekolah:
 
 ```mermaid
 flowchart TD
-    A["1. Identifikasi Pembeli via RFID / NISN"] --> B["2. Pilih Mode Transaksi"]
-    B -->|Mode Menu| C["Pilih Item Makanan & Kuantiti"]
-    B -->|Transaksi Langsung| D["Ketik Nominal Total Belanja"]
-    C --> E["3. Cek Saldo & Batas Belanja Harian"]
-    D --> E
-    E --> F{"Metode Pembayaran"}
-    F -->|Dompet Digital| G["Saldo Terpotong Otomatis Realtime"]
-    F -->|Uang Tunai| H["Input Uang Diterima & Hitung Kembalian"]
-    G --> I["4. Transaksi Sukses & Cetak Struk Kasir"]
-    H --> I
+    A["1. Identifikasi Pembeli via RFID / NISN"] --> B["2. Scan Barcode Makanan / Klik Menu"]
+    B --> C["3. Item Otomatis Masuk ke Keranjang Belanja"]
+    C --> D["4. Verifikasi Rincian & Subtotal Belanja"]
+    D --> E{"Pilih Metode Pembayaran"}
+    E -->|Dompet Digital| F["Saldo Terpotong Otomatis Realtime"]
+    E -->|Uang Tunai| G["Input Uang Diterima & Hitung Kembalian"]
+    F --> H["5. Transaksi Sukses & Cetak Struk Rincian"]
+    G --> H
 ```
 
 ---
