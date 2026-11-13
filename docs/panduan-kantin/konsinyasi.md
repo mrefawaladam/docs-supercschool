@@ -8,7 +8,9 @@ Fitur ini dapat diakses melalui menu **Kantin** > **Titip Barang Konsinyasi** (`
 
 ## Tampilan Antarmuka Titip Barang Konsinyasi
 
-Berikut adalah tampilan antarmuka pembaruan cepat stok harian barang titipan konsinyasi:
+Berikut adalah tampilan antarmuka daftar penerimaan konsinyasi dan modal pembaruan cepat stok harian barang titipan:
+
+![Daftar Barang Konsinyasi Kantin](/screenshots/kantin-consignments.png)
 
 ![Update Cepat Stok Harian Konsinyasi](/screenshots/03_consignment_quick_replenish_modal.png)
 
